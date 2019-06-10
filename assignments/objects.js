@@ -81,7 +81,7 @@ console.log (intern5.multiplyNums(3,4));
 
 // Have the grandchild speak
 
-const parent = {}
+
 
 // Log the parent object's name
 const parent={
@@ -105,3 +105,9 @@ const parent={
   }
 }
 }
+console.log(parent["name"]);
+console.log(parent.child["age"]);
+console.log(`${parent.child.grandchild["name"]} is ${parent.child.grandchild["age"]}`);
+parent.speak();
+parent.child.speak();
+parent.child.grandchild.speak();
